@@ -14,5 +14,6 @@ public:
     void mostrarProductos();
     void listarProductos();
     int getCantidadRegistros();
+    Producto leer(int pos);
 
 };

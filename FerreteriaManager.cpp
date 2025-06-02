@@ -61,16 +61,26 @@ void FerreteriaManager::cargarProducto(){
 
 void FerreteriaManager::mostrarCantidadProductos(){
     ProductoArchivo productoArchivo;
-    int cant;
+    int cantidadProductos;
 
-    cant = productoArchivo.getCantidadRegistros();
+    cantidadProductos = productoArchivo.getCantidadRegistros();
 
-    cout << "Cantidad de productos registrados: " << cant << endl;
+    cout << "Cantidad de productos registrados: " << cantidadProductos << endl;
 }
 
 
-/*void FerreteriaManager::listarProductos() {
-    Producto prod;
+void FerreteriaManager::listarProductos() {
+    ProductoArchivo productoArchivo;
+    Producto registro;
+    int cantidadProductos =productoArchivo.getCantidadRegistros();
+
+    for(int i=0 ; i<cantidadProductos ; i++ ){
+
+        registro = productoArchivo.leer(i);
+        cout<< registro.toCSV() << endl;
+    }
+
+
     FILE* archivo = fopen("productos.dat", "rb");
     if (archivo == NULL) {
         cout << "No se pudo abrir el archivo.\n";
@@ -79,38 +89,76 @@ void FerreteriaManager::mostrarCantidadProductos(){
 
 
 }
-*/
 
 
 
 
-/*void FerreteriaManager::buscarProductoPorCodigo() {
-    int codigoBuscado;
-    bool encontrado = false;
 
-    cout << "Ingrese el codigo del producto a buscar: ";
-    cin >> codigoBuscado;
+void FerreteriaManager::buscarProductoPorCodigo() {
+    ProductoArchivo productoArchivo;
+    Producto registro;
+    int buscarCodigo;
+    int cantidadProductos = productoArchivo.getCantidadRegistros();
 
-    Producto prod;
-    FILE* archivo = fopen("productos.dat", "rb");
-    if (archivo == NULL) {
-        cout << "No se pudo abrir el archivo.\n";
-        return;
+    cout<<"Ingrese el codigo de producto que desea buscar:";
+    cin >> buscarCodigo;
+
+    for(int i=0; i<cantidadProductos ; i++){
+
+        registro = productoArchivo.leer(i);
+        if(registro.getCodProducto()== buscarCodigo){
+
+        cout <<"Nombre del producto: " << registro.getNombreProducto() << endl;
+        cout <<"Tipo de producto: " << registro.getTipoProducto() << endl;
+        cout <<"Marca del producto: " << registro.getMarca() << endl;
     }
 
-    while (fread(&prod, sizeof(Producto), 1, archivo)) {
-        if (prod.getCodProducto() == codigoBuscado) {
-            cout << "Producto encontrado:\n";
-            prod.mostrar();
-            encontrado = true;
-            break;  // cortamos la búsqueda porque ya lo encontramos
-        }
-    }
-
-    fclose(archivo);
-
-    if (!encontrado) {
-        cout << "No se encontro ningun producto con ese codigo.\n";
-    }
 }
-*/
+return;
+}
+
+void FerreteriaManager::buscarProductoPorNombre(){
+    ProductoArchivo productoArchivo;
+    Producto registro;
+    std::string buscarNombre;
+    int cantidadProductos = productoArchivo.getCantidadRegistros();
+
+    cout<<"Ingrese el nombre de producto que desea buscar:";
+    cin >> buscarNombre;
+
+    for(int i=0; i<cantidadProductos ; i++){
+
+        registro = productoArchivo.leer(i);
+        if(registro.getNombreProducto()== buscarNombre){
+
+        cout <<"codigo del producto: " << registro.getCodProducto() << endl;
+        cout <<"Tipo de producto: " << registro.getTipoProducto() << endl;
+        cout <<"Marca del producto: " << registro.getMarca() << endl;
+    }
+
+}
+return;
+}
+
+void FerreteriaManager::buscarProductoPorTipo(){
+    ProductoArchivo productoArchivo;
+    Producto registro;
+    std::string buscarTipo;
+    int cantidadProductos = productoArchivo.getCantidadRegistros();
+
+    cout<<"Ingrese el nombre de producto que desea buscar:";
+    cin >> buscarTipo;
+
+    for(int i=0; i<cantidadProductos ; i++){
+
+        registro = productoArchivo.leer(i);
+        if(registro.getTipoProducto()== buscarTipo){
+
+        cout <<"codigo del producto: " << registro.getCodProducto() << endl;
+        cout <<"Nombre de producto: " << registro.getNombreProducto() << endl;
+        cout <<"Marca del producto: " << registro.getMarca() << endl;
+    }
+
+}
+return;
+}

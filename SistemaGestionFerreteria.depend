@@ -137,13 +137,12 @@
 1748123881 source:c:\users\juan cruz\desktop\utn\codeblocks\programacion2\sistemagestionferreteria\tp-prog2\venta.cpp
 	<iostream>
 
-1748716906 source:c:\users\juan cruz\desktop\utn\codeblocks\programacion2\sistemagestionferreteria\tp-prog2\main.cpp
+1748219551 source:c:\users\juan cruz\desktop\utn\codeblocks\programacion2\sistemagestionferreteria\tp-prog2\main.cpp
 	<iostream>
 	"MenuProducto.h"
 	"MenuProveedor.h"
 	"MenuCompra.h"
 	"MenuVenta.h"
-	"MenuInforme.h"
 	"FerreteriaManager.h"
 
 1748141889 c:\users\juan cruz\desktop\utn\codeblocks\programacion2\sistemagestionferreteria\tp-prog2\fecha.h
@@ -255,11 +254,107 @@
 1748568842 source:c:\users\juan cruz\desktop\utn\codeblocks\programacion2\sistemagestionferreteria\tp-prog2\detalleventaarchivo.cpp
 	<iostream>
 
-1748715103 c:\users\juan cruz\desktop\utn\codeblocks\programacion2\sistemagestionferreteria\tp-prog2\menuinforme.h
+1748658174 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\compra.cpp
+	<iostream>
+
+1748658174 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\compraarchivo.cpp
+	<iostream>
+
+1748658174 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\detallecompra.cpp
+	<iostream>
+
+1748658174 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\detallecompraarchivo.cpp
+	<iostream>
+
+1748658174 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\detalleventa.cpp
+	<iostream>
+
+1748658174 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\detalleventaarchivo.cpp
+	<iostream>
+
+1748658174 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\fecha.cpp
+	"Fecha.h"
+
+1748658174 c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\fecha.h
 	<string>
 
-1748717601 source:c:\users\juan cruz\desktop\utn\codeblocks\programacion2\sistemagestionferreteria\tp-prog2\menuinforme.cpp
+1748749492 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\ferreteriamanager.cpp
 	<iostream>
-	"MenuInforme.h"
+	"Producto.h"
 	"FerreteriaManager.h"
+	"ProductoArchivo.h"
+
+1748736210 c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\producto.h
+	<string>
+
+1748749211 c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\ferreteriamanager.h
+	<string>
+
+1748737191 c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\productoarchivo.h
+	"Producto.h"
+	<string>
+
+1748658174 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\main.cpp
+	<iostream>
+	"MenuProducto.h"
+	"MenuProveedor.h"
+	"MenuCompra.h"
+	"MenuVenta.h"
+	"FerreteriaManager.h"
+
+1748658174 c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\menuproducto.h
+	<string>
+
+1748658174 c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\menuproveedor.h
+	<string>
+
+1748658174 c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\menucompra.h
+	<string>
+
+1748658174 c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\menuventa.h
+	<string>
+
+1748658174 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\menucompra.cpp
+	<iostream>
+	"MenuCompra.h"
+
+1748749394 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\menuproducto.cpp
+	<iostream>
+	"MenuProducto.h"
+	"FerreteriaManager.h"
+
+1748658174 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\menuproveedor.cpp
+	<iostream>
+	"MenuProveedor.h"
+
+1748658174 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\menuventa.cpp
+	<iostream>
+	"MenuVenta.h"
+
+1748746903 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\producto.cpp
+	<iostream>
+	"Producto.h"
+	<cstring>
+
+1748745372 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\productoarchivo.cpp
+	<iostream>
+	"Producto.h"
+	"ProductoArchivo.h"
+
+1748658174 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\proveedor.cpp
+	<iostream>
+	"Proveedor.h"
+	<cstring>
+
+1748658174 c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\proveedor.h
+	<string>
+
+1748658174 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\proveedorarchivo.cpp
+	<iostream>
+
+1748658174 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\venta.cpp
+	<iostream>
+
+1748658174 source:c:\users\gonzalo\desktop\programacion\programacion 2\nueva carpeta\tp-prog2-main\ventaarchivo.cpp
+	<iostream>
 
